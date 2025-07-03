@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Solar System Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-spinner"></div>
+        <h2>Loading Solar System...</h2>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <div class="ui-container title-panel ui-panel">
+        <h1>SOLAR SYSTEM EXPLORER</h1>
+        <div class="subtitle">Interactive 3D Simulation</div>
+    </div>
+
+    <div class="ui-container planet-info ui-panel">
+        <div class="planet-name">Sun</div>
+        <div class="planet-details">
+            <p>Diameter: 1,392,700 km</p>
+            <p>Mass: 1.989 × 10³⁰ kg</p>
+            <p>Surface Temp: 5,500°C</p>
+        </div>
+    </div>
+
+    <div class="ui-container controls-panel ui-panel">
+        <div class="control-group">
+            <div class="control-label">View Mode</div>
+            <div class="button-group">
+                <button id="auto-rotate-btn" class="active">Auto Rotate</button>
+                <button id="free-look-btn">Free Look</button>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="control-label">Simulation Speed</div>
+            <div class="speed-control">
+                <input type="range" id="speed-slider" min="0.1" max="100" value="1" step="0.1">
+                <span id="speed-value">1x</span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="control-label">Planet Focus</div>
+            <select id="planet-selector">
+                <option value="sun">Sun</option>
+                <option value="mercury">Mercury</option>
+                <option value="venus">Venus</option>
+                <option value="earth">Earth</option>
+                <option value="mars">Mars</option>
+                <option value="jupiter">Jupiter</option>
+                <option value="saturn">Saturn</option>
+                <option value="uranus">Uranus</option>
+                <option value="neptune">Neptune</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <div class="control-label">Display</div>
+            <div class="button-group">
+                <button id="toggle-orbits-btn" class="active">Show Orbits</button>
+                <button id="toggle-labels-btn">Show Labels</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
