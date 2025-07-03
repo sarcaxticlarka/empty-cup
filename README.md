@@ -12,7 +12,7 @@ This zip file contains:
 
 ### Option 1: Simple Browser Open
 1. Extract the zip file
-2. Open `solar-system.html` in any modern web browser 
+2. Open `index.html` in any modern web browser 
 
 ### Option 2: Development Server
 For best experience:
