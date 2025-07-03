@@ -16,9 +16,8 @@ This zip file contains:
 
 ### Option 2: Development Server
 For best experience:
-1. Install [VS Code](https://code.visualstudio.com/)
-2. Install the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-3. Right-click `solar-system.html` → "Open with Live Server"
+1. colne
+2. Right-click `index.html` → "Open with Live Server"
 
 ## Demo Video
 Watch the project in action:  
